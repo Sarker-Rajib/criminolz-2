@@ -1,0 +1,23 @@
+@import 'abstracts/fonts';
+@import 'abstracts/variables';
+
+/*=== base css start === */
+@import 'base/global';
+@import 'base/config';
+@import 'base/utility';
+/*===// end of base css === */
+
+
+/*=== layouts css start === */
+/*=== header + nav css start === */
+@import 'layouts/navbar';
+/*=== footer css start === */
+@import 'layouts/footer';
+/*===// end of layouts css === */
+
+
+/*=== components css start === */
+@import 'components/buttons';
+/*=== main body css start === */
+@import 'components/main_body';
+/*===// end of components css === */

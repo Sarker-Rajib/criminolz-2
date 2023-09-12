@@ -1,0 +1,13 @@
+.footer {
+    background: #0b0d0d;
+    padding: 20px 0;
+
+    p {
+        color: #d4cacf;
+        font-size: 20px;
+
+        @media(max-width:767px) {
+            font-size: 18px;
+        }
+    }
+}

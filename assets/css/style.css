@@ -1,0 +1,218 @@
+/*=== base css start === */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+::after, ::before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+  background: #000;
+}
+
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/*===// end of base css === */
+/*=== layouts css start === */
+/*=== header + nav css start === */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 998;
+}
+.header .wrapper {
+  max-width: 725px;
+  margin: auto;
+}
+.header .header-top {
+  background: #0b0d0d;
+}
+.header .header-top .navbar-toggler {
+  background: #e7dce2;
+}
+.header .header-top .wrapper {
+  border-radius: 10px;
+  padding: 10px;
+}
+.header .header-top .wrapper .navbar-brand {
+  font-family: "Urbanist", sans-serif;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #e7dce2;
+  margin: 0;
+}
+.header .header-top .wrapper .nav-item {
+  padding: 0;
+  font-size: 0;
+}
+.header .header-top .wrapper .nav-item .nav-link {
+  font-size: 22px;
+  color: #e7dce2;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .header .header-top .wrapper .nav-item .nav-link {
+    padding-block: 0px;
+  }
+}
+.header .header-top .wrapper .nav-item .nav-link:hover {
+  color: #3a7258;
+}
+.header .header-top .wrapper .nav-item .nav-link.active {
+  color: #3a7258;
+}
+.header .header-bottom .b-wrapper {
+  background: #0b0d0d;
+  border-radius: 5px;
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1.4fr 1.4fr 1.4fr 1.4fr;
+}
+.header .header-bottom .b-wrapper ul {
+  padding-left: 0px;
+}
+.header .header-bottom .b-wrapper ul li {
+  font-size: 18px;
+  color: #dcd1d7;
+  text-transform: uppercase;
+  line-height: 1.2;
+  position: relative;
+  padding-left: 10px;
+}
+.header .header-bottom .b-wrapper ul li::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 6px;
+  height: 6px;
+  background: red;
+}
+.header .header-bottom .b-wrapper .progress-bar {
+  height: 9px;
+  border-radius: 10px;
+  max-width: 130px;
+  background: #838383;
+  background: linear-gradient(180deg, #838383 0%, #c2c2c2 100%);
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.75), inset 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.header .header-bottom .b-wrapper .progress-bar .bar {
+  position: absolute;
+  display: block;
+  height: 100%;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+}
+.header .header-bottom .b-wrapper .progress-bar .bar.bar-blue {
+  width: 90%;
+  background: #01a9f5;
+}
+.header .header-bottom .b-wrapper .progress-bar .bar.bar-leven {
+  background: rgb(251, 4, 1);
+  background: linear-gradient(90deg, rgb(251, 4, 1) 0%, rgb(6, 249, 64) 100%);
+  width: 80%;
+}
+@media (max-width: 767px) {
+  .header .header-bottom {
+    position: fixed;
+    height: 100vh;
+    width: 0%;
+    top: 0;
+    left: 0;
+    background: #000;
+    overflow-y: scroll;
+    z-index: 999;
+    white-space: nowrap;
+    transition: all 0.5s;
+  }
+  .header .header-bottom .b-wrapper {
+    display: block;
+    padding: 10px 25px;
+  }
+  .header .header-bottom.show {
+    width: 100%;
+  }
+}
+
+/*=== footer css start === */
+.footer {
+  background: #0b0d0d;
+  padding: 20px 0;
+}
+.footer p {
+  color: #d4cacf;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .footer p {
+    font-size: 18px;
+  }
+}
+
+/*===// end of layouts css === */
+/*=== components css start === */
+/*=== main body css start === */
+.banner {
+  min-height: calc(100vh - 70px);
+  background: url(../images/bg2.png) no-repeat top left/cover fixed;
+  padding: 200px 0 20px;
+}
+@media (max-width: 767px) {
+  .banner {
+    padding: 100px 0 20px;
+  }
+}
+.banner .inner-body {
+  min-height: 500px;
+  padding: 15px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  background: rgba(11, 13, 13, 0.9176470588);
+  color: #dcd1d7;
+}
+.banner .inner-body .nav-tabs .nav-item .nav-link {
+  font-size: 30px;
+  padding: 0px 10px;
+  color: #dcd1d7;
+  border: 0;
+  border-radius: 5px;
+}
+.banner .inner-body .nav-tabs .nav-item .nav-link.active {
+  background: #573023;
+}
+.banner .inner-body .heading {
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+.banner .inner-body .s-para {
+  font-size: 18px;
+}
+
+/*===// end of components css === *//*# sourceMappingURL=style.css.map */
