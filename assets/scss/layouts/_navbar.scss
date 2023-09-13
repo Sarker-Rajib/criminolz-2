@@ -63,9 +63,9 @@
                         color: #0b0d0d;
                     }
 
-                    // &.active {
-                    //     color: #0b0d0d;
-                    // }
+                    &.active {
+                        color: #0b0d0d;
+                    }
                 }
 
                 .sub-menu {
@@ -91,6 +91,7 @@
 
                         &:hover {
                             background: rgb(214, 100, 34);
+                            color: #0b0d0d;
                         }
                     }
                 }
