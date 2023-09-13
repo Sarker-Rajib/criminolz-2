@@ -11,7 +11,7 @@
     }
 
     .header-top {
-        background: #0b0d0d;
+        background: rgba(18, 37, 34, 0.95);
 
         .navbar-toggler {
             background: #e7dce2;
@@ -102,7 +102,7 @@
 
     .header-bottom {
         .b-wrapper {
-            background: #0b0d0d;
+            background: rgba(27, 30, 25, 0.949);
             border-radius: 5px;
             padding: 10px;
             display: grid;
@@ -131,6 +131,14 @@
                     }
                 }
             }
+
+            .img-wrapper {
+                border-radius: 5px;
+                background: #0b0d0d;
+                height: 100%;
+                padding: 2px;
+            }
+
 
 
             .progress-bar {

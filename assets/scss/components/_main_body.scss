@@ -15,17 +15,24 @@
         background: #0b0d0dea;
         color: #dcd1d7;
 
-        .nav-tabs {
-            .nav-item {
-                .nav-link {
+        .tab-links {
+            padding: 0;
+
+            .nav-item-l {
+                .links {
                     font-size: 30px;
                     padding: 0px 10px;
                     color: #dcd1d7;
                     border: 0;
                     border-radius: 5px;
+                    transition: all 0.2s;
+
+                    &:hover {
+                        color: #b4502e;
+                    }
 
                     &.active {
-                        background: #573023;
+                        background: #0b0d0d;
                     }
                 }
             }
