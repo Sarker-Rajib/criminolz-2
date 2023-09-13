@@ -99,7 +99,7 @@ body {
 }
 .header .header-top .wrapper .nav-item-c .sub-menu {
   padding: 0;
-  background: #000;
+  background: #143d2a;
   min-width: 100px;
 }
 @media (min-width: 768px) {
@@ -158,6 +158,7 @@ body {
   background: #0b0d0d;
   height: 100%;
   padding: 2px;
+  text-align: center;
 }
 .header .header-bottom .b-wrapper .progress-bar {
   height: 9px;
@@ -199,8 +200,11 @@ body {
     transition: all 0.5s;
   }
   .header .header-bottom .b-wrapper {
-    display: block;
-    padding: 10px 25px;
+    padding: 10px 25px 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header .header-bottom .b-wrapper .img-wrapper {
+    grid-column: 1/span 2;
   }
   .header .header-bottom.show {
     width: 100%;

@@ -65,7 +65,7 @@
 
                 .sub-menu {
                     padding: 0;
-                    background: #000;
+                    background: #143d2a;
                     min-width: 100px;
 
                     @media(min-width:768px) {
@@ -137,6 +137,7 @@
                 background: #0b0d0d;
                 height: 100%;
                 padding: 2px;
+                text-align: center;
             }
 
 
@@ -186,8 +187,12 @@
             transition: all 0.5s;
 
             .b-wrapper {
-                display: block;
-                padding: 10px 25px;
+                padding: 10px 25px 30px;
+                grid-template-columns: repeat(2, 1fr);
+
+                .img-wrapper {
+                    grid-column: 1 / span 2;
+                }
             }
 
             &.show {
