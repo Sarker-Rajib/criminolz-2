@@ -2,12 +2,18 @@
     background: #0b0d0d;
     padding: 20px 0;
 
-    p {
+    p,
+    a {
         color: #d4cacf;
         font-size: 20px;
+        transition: all 0.2s;
 
         @media(max-width:767px) {
             font-size: 18px;
         }
+    }
+
+    a:hover {
+        color: #b1751d;
     }
 }
