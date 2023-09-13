@@ -51,7 +51,7 @@
                     text-transform: uppercase;
 
                     @media(min-width:768px) {
-                        padding-block: 16px;
+                        padding: 18px;
                     }
 
                     @media(max-width:767px) {
@@ -60,11 +60,11 @@
                     }
 
                     &:hover {
-                        color: #0b0d0d;
+                        background: #0b0d0d;
                     }
 
                     &.active {
-                        color: #0b0d0d;
+                        background: #0b0d0d;
                     }
                 }
 
